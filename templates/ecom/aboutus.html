@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Jore Clothing Store</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">"Welcome to Jore Clothing, your go-to destination for unique, custom-made t-shirts and creative printed designs! At Jore, we believe that your clothing should express who you are, which is why we offer a platform where you can create your own custom t-shirts or choose from our wide range of pre-designed prints.
+
+  Whether you're looking to make a personal statement, show off your creativity, or find the perfect gift, Jore Clothing has something for everyone. We use high-quality fabrics and printing techniques to ensure that each design not only looks great but lasts long too. Our goal is to bring your vision to life, one t-shirt at a time.
+  
+  Join us in celebrating self-expression, creativity, and individuality through fashion!
+  
+  " </h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+
+</html>
