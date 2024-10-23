@@ -1,0 +1,1 @@
+web: gunicorn joreclothingstore.wsgi --log-file -
